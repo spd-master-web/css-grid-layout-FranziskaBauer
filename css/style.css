@@ -1,1 +1,138 @@
 /* CSS Grid */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* Scrollbar */
+/* width */
+::-webkit-scrollbar {
+  width: 30px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background:lightblue; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: orange; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: orange; 
+}
+/* Scrollbar-end */
+
+
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+.logo {
+  height: 20vh;
+  margin-top: 3vh;
+  margin-bottom: 8vh;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.nav-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-content: space-between;
+  width: 50vw;
+  border-top: solid 2px;
+  border-bottom: solid 2px;
+  margin-top: 10px;
+  margin-right: auto;
+  margin-left: auto; 
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.img-shoe {
+  width: 30vw;
+}
+
+.img-shoe:hover {
+  border: solid yellow 5px;
+  box-shadow: 0px 0px 40px 2px rgba(255,153,0,1);
+}
+
+.nav-boots {
+  margin-left: 50px;
+}
+
+.nav-sandals {
+  margin-right: 50px;
+}
+
+h2 {
+  text-align: center;
+  margin-top: 10vh;
+  background-color: yellow;
+  padding: 10px;
+}
+
+.caption {
+  font-size: 0.7em;
+  text-align: center;
+}
+
+.caption span {
+  font-weight: lighter;
+}
+
+/* boots */
+
+.section-boots {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  max-width: 100vw;
+  column-gap: 10px;
+  row-gap: 30px;
+}
+
+.section-boots-all {
+  justify-self: center;
+}
+
+/* sneakers */
+
+.section-sneakers {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  max-width: 100vw;
+  column-gap: 10px;
+  row-gap: 30px;
+}
+
+.section-sneakers-all {
+  justify-self: center;
+} 
+
+/* sandals */
+
+.section-sandals {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  max-width: 100vw;
+  column-gap: 10px;
+  row-gap: 30px;
+}
+
+.section-sandals-all {
+  justify-self: center;
+} 
